@@ -1,0 +1,4 @@
+<!doctype html><html lang='no'><meta charset='utf-8'><style>body{font-family:Arial}img{max-width:100%}.card{padding:10px;border:1px solid #ccc}</style><h1>Sollid ATV-register</h1><input id='r'><button onclick='s()'>Søk</button><div id='o'></div><script>
+const d={HS0209:{i:'bilder/hs0209.jpg',h:'<h2>HS 0209</h2><p>Kazuma Herman</p>'},MS0405:{i:'bilder/ms0405.jpg',h:'<h2>MS 0405</h2><p>Kina Mikkel</p>'}};
+function s(){let k=document.getElementById('r').value.toUpperCase().replace(/\s/g,'');let o=document.getElementById('o');o.innerHTML=d[k]?'<div class=card><img src='+d[k].i+'>'+d[k].h+'</div>':'Ingen kjøretøy funnet.';}
+</script>
